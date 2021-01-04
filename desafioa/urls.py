@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('k/', include('kudeaketa.urls')),
+    path('e/', include('django.contrib.auth.urls')),
 ]
