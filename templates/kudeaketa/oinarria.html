@@ -3,26 +3,27 @@
 
 <head>
   <!-- estekak -->
-  {% include "orrialdea/nagusia/head.html" %}
-  <title>Desafioa - Orrialdea</title>
+  {% include "nagusia/head.html" %}
+  <title>Kudeaketa</title>
 </head>
 
 <body>
   <!-- Goiburuko menua -->
-  {% include "orrialdea/nagusia/header.html" %}
+  {% include "nagusia/header.html" %}
   <div class="d-flex align-items-stretch">
-    
+    <!-- Albolo nabegazio barra -->
+    {% include "nagusia/sidebar.html" %}
     <div class="page-holder w-100 d-flex flex-wrap">
       <div class="container-fluid px-xl-5">
         <!-- Edukia -->
         {% block edukia %}{% endblock %}
       </div>
       <!-- Footerra -->
-      {% include "orrialdea/nagusia/footer.html" %}
+      {% include "nagusia/footer.html" %}
     </div>
   </div>
   <!-- JavaScript files-->
-  {% include "orrialdea/nagusia/scripts.html" %}
+  {% include "nagusia/scripts.html" %}
 </body>
 
 </html>

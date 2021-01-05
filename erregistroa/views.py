@@ -11,4 +11,4 @@ def erregistratu(request):
             #return redirect('posts:list')
     else:
         form = UserCreationForm()
-    return render(request, 'erregistroa/erregistratu.html', {'form': form})
+    return render(request, 'erregistratu.html', {'form': form})
