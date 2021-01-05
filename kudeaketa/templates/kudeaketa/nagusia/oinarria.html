@@ -3,27 +3,27 @@
 
 <head>
   <!-- estekak -->
-  {% include "nagusia/head.html" %}
+  {% include "kudeaketa/nagusia/head.html" %}
   <title></title>
 </head>
 
 <body>
   <!-- Goiburuko menua -->
-  {% include "nagusia/header.html" %}
+  {% include "kudeaketa/nagusia/header.html" %}
   <div class="d-flex align-items-stretch">
     <!-- Albolo nabegazio barra -->
-    {% include "nagusia/sidebar.html" %}
+    {% include "kudeaketa/nagusia/sidebar.html" %}
     <div class="page-holder w-100 d-flex flex-wrap">
       <div class="container-fluid px-xl-5">
         <!-- Edukia -->
         {% block edukia %}{% endblock %}
       </div>
       <!-- Footerra -->
-      {% include "nagusia/footer.html" %}
+      {% include "kudeaketa/nagusia/footer.html" %}
     </div>
   </div>
   <!-- JavaScript files-->
-  {% include "nagusia/scripts.html" %}
+  {% include "kudeaketa/nagusia/scripts.html" %}
 </body>
 
 </html>
