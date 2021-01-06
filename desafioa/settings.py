@@ -130,3 +130,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),] # Static karpeta app guzt
 
 MEDIA_URL = '/meida/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+LOGIN_REDIRECT_URL = 'k/'
+LOGOUT_REDIRECT_URL = ''
