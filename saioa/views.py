@@ -29,7 +29,7 @@ def hasi(request):
             return redirect('/k')
     else:
         form = AuthenticationForm()
-    return render(request, 'login.html', {'form': form})
+    return render(request, 'saioa/login.html', {'form': form})
 
 def irten(request):
     logout(request)
