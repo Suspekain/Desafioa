@@ -4,8 +4,11 @@
         <a href="#" class="sidebar-toggler text-gray-500 mr-4 mr-lg-5 lead">
             <i class="fas fa-align-left"></i>
         </a>
-        <a href="index.html" class="navbar-brand font-weight-bold text-uppercase text-base">Bubbly Dashboard</a>
+        <a href="/" class="navbar-brand font-weight-bold text-uppercase text-base">DESAFIOA</a>
+
+        
         <ul class="ml-auto d-flex align-items-center list-unstyled mb-0">
+            <!-- Bilaketa kutxa -->
             <li class="nav-item">
                 <form id="searchForm" class="ml-auto d-none d-lg-block">
                     <div class="form-group position-relative mb-0">
@@ -13,13 +16,16 @@
                             class="position-absolute bg-white border-0 p-0">
                             <i class="o-search-magnify-1 text-gray text-lg"></i>
                         </button>
-                        <input type="search" placeholder="Search ..."
+                        <input type="search" placeholder="Bilatu ..."
                             class="form-control form-control-sm border-0 no-shadow pl-4">
                     </div>
                 </form>
             </li>
+
+            {% if user.is_authenticated %}
+            <!-- Notifikazioak -->
             <li class="nav-item dropdown mr-3">
-                <a id="notifications" href="http://example.com" data-toggle="dropdown" aria-haspopup="true"
+                <a id="notifications" href="" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false" class="nav-link dropdown-toggle text-gray-400 px-1">
                     <i class="fa fa-bell"></i>
                     <span class="notification-icon"></span>
@@ -72,24 +78,34 @@
                     </a>
                 </div>
             </li>
+            {% endif %}
+
+            <!-- Erabiltzailearen ekintza zerrenda -->
             <li class="nav-item dropdown ml-auto">
-                <a id="userInfo" href="http://example.com" data-toggle="dropdown" aria-haspopup="true"
+                {% if user.is_authenticated %}
+                <a id="userInfo" href="" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false" class="nav-link dropdown-toggle">
-                    <img src="img/avatar-6.jpg" alt="Jason Doe" style="max-width: 2.5rem;"
+                    <img src="{% static 'media/user.jpg' %}" alt="{{user.username}}" style="max-width: 2.5rem;"
                         class="img-fluid rounded-circle shadow">
                 </a>
                 <div aria-labelledby="userInfo" class="dropdown-menu">
                     <a href="#" class="dropdown-item">
-                        <strong class="d-block text-uppercase headings-font-family">Mark Stephen</strong>
-                        <small>Web Developer</small>
+                        <strong class="d-block text-uppercase headings-font-family">{{user.username}}</strong>
+                        <small>puntuak</small>
                     </a>
                     <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item">Settings</a>
-                    <a href="#" class="dropdown-item">Activity log</a>
+                    <a href="#" class="dropdown-item">Ezarpenak</a>
                     <div class="dropdown-divider"></div>
-                    <a href="/s/irten" class="dropdown-item">Logout</a>
+                    <a href="/s/irten" class="dropdown-item">Irten</a>
                 </div>
+                {% else %}
+                <a href="s/hasi" aria-haspopup="true" aria-expanded="false" class="nav-link">
+                    <img src="{% static 'media/user.jpg' %}" alt="Saioa hasi" style="max-width: 2.5rem;"
+                        class="img-fluid rounded-circle shadow">
+                </a>
+                {% endif %}
             </li>
         </ul>
+        
     </nav>
 </header>
