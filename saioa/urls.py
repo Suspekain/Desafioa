@@ -1,5 +1,5 @@
 from django.urls import path, include
-from erregistroa import views
+from saioa import views
  
 urlpatterns = [
     path('erregistratu/', views.erregistratu, name='erregistratu'),

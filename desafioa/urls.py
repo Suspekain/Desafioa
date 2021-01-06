@@ -20,5 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('orrialdea.urls')),
     path('k/', include('kudeaketa.urls')),
-    path('e/', include('erregistroa.urls')),
+    path('s/', include('saioa.urls')),
 ]

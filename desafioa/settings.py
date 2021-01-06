@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'kudeaketa',
     'orrialdea',
-    'erregistroa',
+    'saioa',
 ]
 
 MIDDLEWARE = [
