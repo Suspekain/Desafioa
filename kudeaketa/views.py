@@ -7,3 +7,6 @@ def hasiera(request):
 
 def apostuak(request):
     return render(request, 'kudeaketa/apostuak.html')
+
+def bubbly(request):
+    return render(request, 'kudeaketa/bubbly.html')

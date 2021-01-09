@@ -5,7 +5,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.hasiera, name="Hasiera"),
-    path('apostuak', views.apostuak)
+    path('apostuak', views.apostuak),
+    path('bubbly', views.bubbly)
     
 ]
 #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
