@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def hasiera(request):
     return render(request, "kudeaketa/hasiera.html")
+
+def apostuak(request):
+    return render(request, 'kudeaketa/apostuak.html')

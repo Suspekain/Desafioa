@@ -16,7 +16,7 @@ def erregistratu(request):
             return redirect('/k')
     else:
         form = UserCreationForm()
-    return render(request, 'erregistratu.html', {'form': form})
+    return render(request, 'saioa/erregistratu.html', {'form': form})
 
 def hasi(request):
     if request.method == 'POST':

@@ -1,0 +1,10 @@
+[
+    {
+      "model": "kudeaketa.Kirolak",
+      "pk": 1,
+      "fields": {
+        "izena": "Aizkora",
+        "azalpena": "Egurra moztu"
+      }
+    }
+  ]
