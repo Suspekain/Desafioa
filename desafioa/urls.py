@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include('orrialdea.urls')),
     path('k/', include('kudeaketa.urls')),
     path('s/', include('saioa.urls')),
+    path('d/', include('datuak.urls')),
 ]
