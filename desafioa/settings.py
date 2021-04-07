@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'kudeaketa',
     'orrialdea',
     'saioa',
+    'datuak',
 ]
 
 MIDDLEWARE = [
