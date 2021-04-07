@@ -8,5 +8,6 @@ class Kirolaria(models.Model):
     jaiotze_data = models.DateTimeField
     kirola = models.CharField(max_length=30)
     irudia = models.ImageField(default=None, blank=True, null=True)
+
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now_add=True)
